@@ -1,0 +1,57 @@
+.buttons {
+    display: inline-flex;
+    padding: 30px;
+    .btn-img-1 {
+        background-image: url(https://s-media-cache-ak0.pinimg.com/564x/1b/0d/17/1b0d1734d728775cd365e92df4c52e4e.jpg);
+        @include button();
+    }
+    .btn-img-2 {
+        background-image: url(https://s-media-cache-ak0.pinimg.com/564x/7b/44/f4/7b44f46075e2cedf46be7ea2840292d7.jpg);
+        @include button();
+        width: 200px;
+    }
+    .btn-img-3 {
+        background-image: url(https://s-media-cache-ak0.pinimg.com/564x/42/73/b7/4273b7c22af24b9d4bade05c28cdc2ac.jpg);
+        @include button();
+        width: 80px;
+    }
+    .btn-img-4 {
+        background-image: url(https://s-media-cache-ak0.pinimg.com/564x/1b/0d/17/1b0d1734d728775cd365e92df4c52e4e.jpg);
+        @include button();
+        width: 110px;
+    }
+    .btn-img-5 {
+        background-image: url(https://s-media-cache-ak0.pinimg.com/564x/7b/44/f4/7b44f46075e2cedf46be7ea2840292d7.jpg);
+        @include button();
+        width: 110px;
+    }
+    .btn-img-6 {
+        background-image: url(https://s-media-cache-ak0.pinimg.com/564x/42/73/b7/4273b7c22af24b9d4bade05c28cdc2ac.jpg);
+        @include button();
+        width: 90px;
+    }
+    .btn-img-7 {
+        background-image: url(https://s-media-cache-ak0.pinimg.com/564x/1b/0d/17/1b0d1734d728775cd365e92df4c52e4e.jpg);
+        @include button();
+        width: 80px;
+    }
+    .btn-img-8 {
+        background-image: url(https://s-media-cache-ak0.pinimg.com/564x/7b/44/f4/7b44f46075e2cedf46be7ea2840292d7.jpg);
+        @include button();
+        width: 140px;
+    }
+    .btn-img-9 {
+        background-image: url(https://s-media-cache-ak0.pinimg.com/564x/42/73/b7/4273b7c22af24b9d4bade05c28cdc2ac.jpg);
+        @include button();
+        width: 60px;
+    }
+    .btn-img-10 {
+        background-image: url(https://s-media-cache-ak0.pinimg.com/564x/1b/0d/17/1b0d1734d728775cd365e92df4c52e4e.jpg);
+        @include button();
+        width: 110px;
+    }
+    .fa-angle-right {
+        color: gray;
+        cursor: pointer;
+    }
+}
