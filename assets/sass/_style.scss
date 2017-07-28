@@ -4,18 +4,18 @@
 
 // Para que las imagenes se pongan una al lado de la otra
 .container {
-    float: left;
-    width: 20%;
+    //float: left;
+    display: inline-block;
+    width: 15%;
     padding: 10px;
     margin: 20px 20px 20px 20px;
     text-align: center;
     .photo {
-        width: 90%;
+        width: 99%;
         border-radius: 20px;
     }
     .title-photo {
         text-align: left;
-        margin-left: 20px;
         font-weight: bold;
         margin-top: 5px;
         color: #434445;
@@ -28,9 +28,18 @@
     .container-user {
         margin-top: 10px;
         font-size: 13px;
+        margin-bottom: 20px;
         .hashtag {
             color: gray;
             cursor: pointer;
+        }
+    }
+    .content-followers {
+        text-align: right;
+        margin-left: 3px;
+        .pined {
+            font-size: 8px;
+            color: gray;
         }
     }
 }

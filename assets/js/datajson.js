@@ -16,7 +16,13 @@ $(document).ready(function() {
         $('#info').append(`
         <div class="container">                
                     <div> <img src="dist/img/${dataImg.image_url}" class="photo"> </div>
-                    <div class="title-photo"> ${dataImg.title} <div>
+                    <div class="title-photo"> 
+                        ${dataImg.title}
+                        <span class="content-followers">
+                            <i class="fa fa-thumb-tack pined" aria-hidden="true"></i> <span class="pined"> 36,6K </span>
+                            <i class="fa fa-check pined" aria-hidden="true"></i> <span class="pined"> 6 </span>
+                        </span>                            
+                    <div>
                     <div class="description-photo">${dataImg.description} </div>
                     <div class="container-user"> 
                         <i class="fa fa-user-circle" aria-hidden="true"></i> 
