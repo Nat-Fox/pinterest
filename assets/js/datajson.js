@@ -11,4 +11,12 @@ data.forEach(function(dataImg) {
     console.log('hash', dataImg.hashtag);
     // url img
     console.log('img', dataImg.image_url);
+
+    $('#info').append(`
+        <div> Title: ${dataImg.title} <div>
+        <div> Description: ${dataImg.description} </div>
+        <div> User: ${dataImg.user} </div>
+        <div> Hash: ${dataImg.hashtag} </div>
+        <div> <img src="dist/img/${dataImg.image_url}"> </div>
+    `);
 });
