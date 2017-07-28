@@ -1,1 +1,1 @@
-.container{float:left;width:20%;padding:10px;margin:20px;text-align:center}.container .photo{width:90%;border-radius:20px}
+*{overflow-x:hidden}.container{float:left;width:20%;padding:10px;margin:20px;text-align:center}.container .photo{width:90%;border-radius:20px}.container .title-photo{text-align:left;margin-left:20px;font-weight:700;margin-top:5px;color:#434445}.container .description-photo{color:#434445;font-size:16px;font-family:Bellefair,serif}.container .container-user{margin-top:10px;font-size:13px}.container .container-user .hashtag{color:gray;cursor:pointer}

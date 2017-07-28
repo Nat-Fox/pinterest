@@ -14,9 +14,15 @@ $(document).ready(function() {
         console.log('img', dataImg.image_url);
 
         $('#info').append(`
-        <div class="container">
-                    
+        <div class="container">                
                     <div> <img src="dist/img/${dataImg.image_url}" class="photo"> </div>
+                    <div class="title-photo"> ${dataImg.title} <div>
+                    <div class="description-photo">${dataImg.description} </div>
+                    <div class="container-user"> 
+                        <i class="fa fa-user-circle" aria-hidden="true"></i> 
+                        <span>${dataImg.user}</span>
+                        <span class="hashtag">#${dataImg.hashtag}</span>
+                    </div>
         </div>
     `);
     });
