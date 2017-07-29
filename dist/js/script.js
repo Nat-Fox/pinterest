@@ -10256,40 +10256,60 @@ var data = [{ "id": 1, "title": "Fuke zisukje bu dibas sik.", "description": "Ju
 
 $(document).ready(function() {
     data.forEach(function(dataImg) {
-        // titulo
-        console.log('titulo', dataImg.title);
-        // descripcion
-        console.log('descripcion', dataImg.description);
-        // nombre usuario
-        console.log('nombre ususario', dataImg.user);
-        // hashtag
-        console.log('hash', dataImg.hashtag);
-        // url img
-        console.log('img', dataImg.image_url);
+        // El modal parte oculto
+        $('.modal').hide();
 
+        // Dibuja la pagina
         $('#info').append(`
-        <div class="container">                
-                    <div> <img src="dist/img/${dataImg.image_url}" class="photo"> </div>
-                    <div class="title-photo"> 
-                        ${dataImg.title}
-                        <span class="content-followers">
-                            <i class="fa fa-thumb-tack pined" aria-hidden="true"></i> <span class="pined"> 36,6K </span>
-                            <i class="fa fa-check pined" aria-hidden="true"></i> <span class="pined"> 6 </span>
-                        </span>                            
-                    <div>
-                    <div class="description-photo">${dataImg.description} </div>
-                    <div class="container-user"> 
-                        <i class="fa fa-user-circle" aria-hidden="true"></i> 
-                        <span>${dataImg.user}</span>
-                        <span class="hashtag">#${dataImg.hashtag}</span>
-                    </div>
-        </div>
-    `);
+            <div class="container">                
+                <div> 
+                    <img src="dist/img/${dataImg.image_url}" class="photo" id="photo-${dataImg.id}"> 
+                </div>
+                <div class="title-photo"> 
+                    ${dataImg.title}
+                    <span class="content-followers">
+                        <i class="fa fa-thumb-tack pined" aria-hidden="true"></i> <span class="pined"> 36,6K </span>
+                        <i class="fa fa-check pined" aria-hidden="true"></i> <span class="pined"> 6 </span>
+                    </span>                            
+                <div>
+                <div class="description-photo">${dataImg.description} </div>
+                <div class="container-user"> 
+                    <i class="fa fa-user-circle" aria-hidden="true"></i> 
+                    <span>${dataImg.user}</span>
+                    <span class="hashtag">#${dataImg.hashtag}</span>
+                </div>
+            </div>
+        `);
+
+        $(`#photo-${dataImg.id}`).on('click', function() {
+            $('.modal').show();
+            // Borra el contenido para que al clickear de nuevo no se pegue abajo
+            $('#info-modal').empty();
+            $('.user-desde-modal').empty();
+
+            $('#info-modal').append(`
+                <div class="title-photo"> 
+                    ${dataImg.title}                                                
+                <div>
+                <div class="photo-modal"> 
+                    <img src="dist/img/${dataImg.image_url}" class="photo"> 
+                </div>
+            `);
+            $('.user-desde-modal').append(`                
+                
+                <div class="col-modal info-user"> 
+                    ${dataImg.user}
+                    <span class="hashtag info-user">#${dataImg.hashtag}</span>
+                </div>
+                <div class="col-modal align-right">
+                    <button type="button" class="btn-leer">Leerlo</button>
+                </div>            
+                
+                <div class="description-photo">${dataImg.description} </div>
+            `);
+        });
+
     });
+
+
 });
-
-
-// <div> Title: ${dataImg.title} <div>
-//                     <div> Description: ${dataImg.description} </div>
-//                     <div> User: ${dataImg.user} </div>
-//                     <div> Hash: ${dataImg.hashtag} </div>
