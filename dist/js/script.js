@@ -10295,6 +10295,7 @@ $(document).ready(function() {
                     <img src="dist/img/${dataImg.image_url}" class="photo"> 
                 </div>
             `);
+
             $('.user-desde-modal').append(`                
                 
                 <div class="col-modal info-user"> 
