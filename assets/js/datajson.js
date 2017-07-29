@@ -32,10 +32,6 @@ $(document).ready(function() {
         </div>
     `);
     });
+
+
 });
-
-
-// <div> Title: ${dataImg.title} <div>
-//                     <div> Description: ${dataImg.description} </div>
-//                     <div> User: ${dataImg.user} </div>
-//                     <div> Hash: ${dataImg.hashtag} </div>
