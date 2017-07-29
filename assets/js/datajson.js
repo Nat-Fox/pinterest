@@ -60,7 +60,15 @@ $(document).ready(function() {
         $('.btn-modal').on('click', function() {
             $('.modal').hide();
         });
-    });
 
+    });
+    // Para cerrar el modal si se hace click fuera de el
+    $(document).click(function(event) {
+        if (!$(event.target).closest('#myModal').length && event.target.classList[0] != 'photo') {
+            if ($('#myModal').is(":visible")) {
+                $('#myModal').hide();
+            }
+        }
+    });
 
 });
