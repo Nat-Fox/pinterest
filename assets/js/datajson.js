@@ -56,6 +56,10 @@ $(document).ready(function() {
             `);
         });
 
+        // Si se hace click en el btn-modal se oculta el modal
+        $('.btn-modal').on('click', function() {
+            $('.modal').hide();
+        });
     });
 
 
