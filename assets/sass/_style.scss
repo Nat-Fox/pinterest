@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+#info {
+    text-align: center;
+}
+
 // Para que las imagenes se pongan una al lado de la otra
 .container {
     //float: left;
@@ -47,5 +51,32 @@
     }
     .icon-user {
         margin-left: 5px;
+    }
+}
+
+// Extra big 
+@media screen and (min-width: 1400px) {
+    // El boton 11 y 12 no se ve si la pantalla es pequeña
+    .btn-img-11 {
+        display: none;
+    }
+    .btn-img-12 {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1500px) {
+    .btn-img-11 {
+        display: inline;
+        background-image: url(https://s-media-cache-ak0.pinimg.com/564x/1b/0d/17/1b0d1734d728775cd365e92df4c52e4e.jpg);
+        @include button();
+    }
+}
+
+@media screen and (min-width: 1900px) {
+    .btn-img-12 {
+        display: inline;
+        background-image: url(https://s-media-cache-ak0.pinimg.com/564x/42/73/b7/4273b7c22af24b9d4bade05c28cdc2ac.jpg);
+        @include button();
     }
 }

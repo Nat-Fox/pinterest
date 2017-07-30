@@ -1,6 +1,8 @@
 .buttons {
     display: inline-flex;
     padding: $padding-btn-nav;
+    display: flex;
+    justify-content: center;
     .btn-img-1 {
         background-image: url(https://s-media-cache-ak0.pinimg.com/564x/1b/0d/17/1b0d1734d728775cd365e92df4c52e4e.jpg);
         @include button();
