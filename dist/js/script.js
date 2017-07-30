@@ -10334,6 +10334,8 @@ $(document).ready(function() {
 
                 // Agregar los segundos 20
                 segundaCarga.forEach(function(segundaData) {
+                    // El modal parte oculto
+                    $('.modal').hide();
                     // Dibuja la pagina
                     $('#info').append(`
                         <div class="container">                
@@ -10357,6 +10359,43 @@ $(document).ready(function() {
                     `);
                     // Sumo uno por cada append
                     contador++;
+
+                    // Si se hace click en la imagen se abre el modal
+                    $(`#photo-${segundaData.id}`).on('click', function() {
+                        console.log('click')
+                        $('.modal').show();
+                        // Borra el contenido para que al clickear de nuevo no se pegue abajo
+                        $('#info-modal').empty();
+                        $('.user-desde-modal').empty();
+
+                        $('#info-modal').append(`
+                            <div class="title-photo"> 
+                                ${segundaData.title}                                                
+                            <div>
+                            <div class="photo-modal"> 
+                                <img src="dist/img/${segundaData.image_url}" class="photo"> 
+                            </div>
+                        `);
+
+                        $('.user-desde-modal').append(`                
+                            
+                            <div class="col-modal info-user"> 
+                                ${segundaData.user}
+                                <span class="hashtag info-user">#${segundaData.hashtag}</span>
+                            </div>
+                            <div class="col-modal align-right">
+                                <button type="button" class="btn-leer">Leerlo</button>
+                            </div>            
+                            
+                            <div class="description-photo">${segundaData.description} </div>
+                        `);
+
+
+                    });
+                    // Si se hace click en el btn-modal se oculta el modal
+                    $('.btn-modal').on('click', function() {
+                        $('.modal').hide();
+                    });
                 });
             }
         });
