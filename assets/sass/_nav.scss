@@ -1,12 +1,11 @@
 .content-nav {
-    font-family: 'Bellefair', serif;
+    font-family: $font;
     width: 100%;
     margin: auto;
     .fa-pinterest {
         font-size: 40px;
-        color: #bd081c;
-        margin-right: 30px;
-        margin-left: 30px;
+        color: $color-pinterest;
+        margin: 0px 30px 0px 30px;
         padding: 15px;
     }
     .text-search {
@@ -16,21 +15,18 @@
         height: 40px;
     }
     .navbar-text {
-        color: gray;
-        margin-right: 30px;
-        margin-bottom: 10px;
+        color: $color-grey-text;
+        margin: 0px 30px 26px 0px;
         cursor: pointer;
-        margin-bottom: 26px;
     }
     .navbar-text:hover {
-        color: #bd081c;
+        color: $color-pinterest;
         cursor: pointer;
     }
     .icon-search {
         background-color: #efefef;
-        padding-left: 15px;
         border-right: 1px solid lightgrey;
-        margin-bottom: 14px;
+        margin: 0px 0px 14px 15px;
     }
     .fa-times {
         background-color: #efefef;
@@ -38,7 +34,7 @@
     }
     .all-pin {
         margin-right: 10px;
-        color: grey;
+        color: $color-grey-text;
         cursor: pointer;
     }
     .fa-angle-down {
@@ -48,16 +44,13 @@
     .nat-fox {
         border-radius: 50%;
         cursor: pointer;
-        margin-left: 80px;
+        margin: 0px 0px 5px 80px;
         border: 1px solid orangered;
-        margin-bottom: 5px;
     }
     .user-name {
-        color: grey;
-        margin-bottom: 10px;
-        margin-left: 10px;
+        color: $color-grey-text;
+        margin: 0px 0px 25px 10px;
         cursor: pointer;
-        margin-bottom: 25px;
     }
 }
 
@@ -76,6 +69,6 @@ header nav ul li {
 
 header nav ul li a {
     display: block;
-    color: black;
+    color: $color-black;
     text-decoration: none;
 }

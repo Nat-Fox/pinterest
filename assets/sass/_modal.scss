@@ -1,15 +1,13 @@
 .modal {
-    margin-left: 450px;
-    margin-right: 300px;
-    margin-bottom: 100px;
-    border: 1px solid grey;
-    color: black;
+    margin: 0px 300px 100px 450px;
+    border: 1px solid $color-grey-text;
+    color: $color-black;
     background-color: rgba(255, 255, 255, 1);
-    border-radius: 5px;
+    border-radius: $border-radius;
     padding: 10px;
     position: fixed;
     top: 5px;
-    width: 35%;
+    width: $width-modal;
     .row-s6 {
         display: inline-flex;
         width: 100%;
@@ -21,16 +19,15 @@
         }
     }
     .icons-modal {
-        color: grey;
+        color: $color-grey-text;
         cursor: pointer;
-        margin-left: 5px;
-        margin-right: 5px;
+        margin: 0px 5px 0px 5px;
     }
     .title-photo {
         text-align: left;
         font-weight: bold;
         margin-top: 5px;
-        color: #434445;
+        color: $color-title;
         font-size: 20px;
     }
     .photo {
@@ -43,11 +40,11 @@
         text-align: center;
     }
     .fa-user-circle {
-        color: gray;
+        color: $color-grey-text;
         margin-top: 5px;
     }
     .user-desde-modal {
-        color: gray;
+        color: $color-grey-text;
         margin-left: 5px;
     }
     .btn-leer {
@@ -55,17 +52,17 @@
         width: 70px;
         height: 28px;
         border: none;
-        border-radius: 5px;
+        border-radius: $border-radius;
         cursor: pointer;
     }
     .description-photo {
-        color: #434445;
+        color: $color-title;
         font-size: 18px;
         margin-left: 10px;
-        font-family: 'Bellefair', serif;
+        font-family: $font;
     }
     .info-user {
-        font-family: 'Bellefair', serif;
+        font-family: $font;
     }
     .col-modal {
         display: inline-block;

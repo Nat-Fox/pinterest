@@ -21,19 +21,19 @@
         text-align: left;
         font-weight: bold;
         margin-top: 5px;
-        color: #434445;
+        color: $color-title;
     }
     .description-photo {
-        color: #434445;
+        color: $color-title;
         font-size: 16px;
-        font-family: 'Bellefair', serif;
+        font-family: $font;
     }
     .container-user {
         margin-top: 10px;
         font-size: 13px;
         margin-bottom: 20px;
         .hashtag {
-            color: gray;
+            color: $color-grey-text;
             cursor: pointer;
         }
     }
@@ -42,7 +42,7 @@
         margin-left: 3px;
         .pined {
             font-size: 8px;
-            color: gray;
+            color: $color-grey-text;
         }
     }
     .icon-user {
